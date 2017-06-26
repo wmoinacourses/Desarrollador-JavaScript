@@ -1,0 +1,10 @@
+const nacimiento = new Date(1993,5,3)
+const hoy = new Date()
+const tiempo = hoy - nacimiento
+const tiempoSegundos = tiempo / 1000
+const tiempoMinutos = tiempoSegundos / 60
+const tiempoHoras = tiempoMinutos / 60
+const tiempoDias = tiempoHoras /24
+const tiempoSemanas = tiempoDias / 7
+const tiempoYears = tiempoDias / 365
+const proximo = new Date(hoy.getFullYear(), nacimiento.getMonth(), nacimiento.getDate())
