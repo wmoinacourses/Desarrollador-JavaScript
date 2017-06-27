@@ -11,7 +11,7 @@ const Punto = {
   },
   moverEndy: function moverEndy(y) {
     this.y += y
-  }
+  },
   distancia: function distancia(p) {
     const x = this.x - p.x
     const y = this.y - p.y
@@ -19,13 +19,27 @@ const Punto = {
   }
 }
 
-const p1 = Objet.create(Punto)
-p1.init(0,4)
+const p1 = Object.create(Punto)
+p1.init(0, 4)
 
-const p2 = Objet.create(Punto)
-p2.init(3,0)
+const p2 = Object.create(Punto)
+p2.init(3, 0)
 
 console.log(p1.distancia(p2))
 p1.moverEndy(12)
 p2.moverEndx(1)
 console.log(p1.distancia(p2))
+//
+// const Punto = {
+//   init: function init(x, y) {
+//     let obj = Object.create(this)
+//     obj.x = x;
+//     obj.y = y;
+//     return obj
+//   },
+//   moverEnX: function moverEnX(x) {
+//     this.x += x
+//   }
+// }
+//
+// let p1 = Punto.init(1, 4) // nos evitamos hacer la asignación de forma manual

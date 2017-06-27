@@ -1,16 +1,16 @@
 // calcular la distancia entre dos puntos
 
-const  p1 = {
-  x : 0,
-  y : 4
+const p1 = {
+  x: 0,
+  y: 4
 }
 
 const p2 = {
-  x : 3,
-  y : 0
+  x: 3,
+  y: 0
 }
 
-function distancia (p1, p2){
+function distancia(p1, p2) {
   const x = p1.x - p2.x
   const y = p1.y - p2.y
 
@@ -18,4 +18,7 @@ function distancia (p1, p2){
 }
 
 //console.log(distancia(p1,p2))
-console.log(distancia(p1,{x:12,y:33}))
+console.log(distancia(p1, {
+  x: 12,
+  y: 33
+}))

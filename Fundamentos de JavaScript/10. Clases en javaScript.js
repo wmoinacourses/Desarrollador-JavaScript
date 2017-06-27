@@ -26,3 +26,4 @@ console.log(p1.distancia(p2))
 p1.moverEndy(12)
 p2.moverEndx(1)
 console.log(p1.distancia(p2))
+// 
