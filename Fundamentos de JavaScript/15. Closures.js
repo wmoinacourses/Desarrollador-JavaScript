@@ -19,7 +19,7 @@ function saludarFamilia(apellido) {
   }
 }
 
-const saludarGomez = saludarFamilia('Gomez')
+const saludarPerez = saludarFamilia('Perez')
 const saludarMoina = saludarFamilia('Moina')
 
 saludarMoina("Wilmer")
@@ -31,3 +31,28 @@ saludarPerez("Wilmer")
 saludarPerez("Evelin")
 saludarPerez("Kenai")
 saludarPerez("Adelain")
+
+function makePrefixer (prefijo){
+  return function mathPrefijo (adjetivo){
+    console.log(`${prefijo}${adjetivo}`)
+  }
+}
+
+const prefijoRe = makePrefixer("Re")
+const prefijoUltra = makePrefixer("Ultra")
+
+prefijoRe('Guapa')
+prefijoRe('Linda')
+prefijoRe('Encantadora')
+prefijoRe('Hermosa')
+
+prefijoUltra('Guapa')
+prefijoUltra('Linda')
+prefijoUltra('Encantadora')
+prefijoUltra('Hermosa')
+
+const makePrefixer = (prefijo) => (adjetivo) => console.log(`${prefijo}${adjetivo}`)
+const prefijoRe = makePrefixer("Re")
+const prefijoUltra = makePrefixer("Ultra")
+prefijoRe('Guapa')
+prefijoUltra('Hermosa')
